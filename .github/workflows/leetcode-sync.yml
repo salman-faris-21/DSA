@@ -2,21 +2,22 @@ name: LeetCode Sync
 
 on:
   schedule:
-    # Every 6 hours. Keep in sync with config.yml -> sync.schedule_cron.
+    # Every 6 hours (UTC)
     - cron: "0 */6 * * *"
-  workflow_dispatch: {}   # allows manual "Run workflow" from the Actions tab
+  workflow_dispatch: {}
 
 permissions:
-  contents: write   # needed to commit/push solution files + README updates
+  contents: write
 
 concurrency:
   group: leetcode-sync
-  cancel-in-progress: false   # never cancel a run mid-commit
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,18 +30,22 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        working-directory: ./leetcode-sync
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run LeetCode sync
         id: run_sync
+        working-directory: ./leetcode-sync
         env:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
           LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
-        working-directory: .
         run: |
           set -o pipefail
+
           python scripts/sync.py | tee sync_output.log
-          # Surface whether anything changed, for the next step.
+
           if grep -q "^changed=true$" sync_output.log; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
@@ -49,6 +54,7 @@ jobs:
 
       - name: Check for local changes
         id: git_status
+        working-directory: .
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             echo "dirty=true" >> "$GITHUB_OUTPUT"
@@ -61,10 +67,9 @@ jobs:
         run: |
           git config user.name "leetcode-sync-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add leetcode/ README.md
 
-          # Count how many new problem folders were added in this commit,
-          # so single-problem vs multi-problem commit messages read cleanly.
+          git add leetcode-sync/leetcode/ leetcode-sync/README.md leetcode-sync/.sync_state.json
+
           NEW_DIRS=$(git diff --cached --name-only --diff-filter=A | grep -c '/README.md$' || true)
 
           if [ "$NEW_DIRS" -eq 1 ]; then
@@ -76,12 +81,12 @@ jobs:
             git commit -m "leetcode: update stats"
           fi
 
-          git push
+          git push origin main
 
       - name: Upload sync log
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: leetcode-sync-log
-          path: sync_output.log
+          path: leetcode-sync/sync_output.log
           retention-days: 14
