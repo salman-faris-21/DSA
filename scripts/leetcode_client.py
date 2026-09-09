@@ -262,30 +262,53 @@ class LeetCodeClient:
 
     def get_progress_stats(self) -> ProgressStats:
         query = """
-        query userProgress($username: String!) {
-          matchedUser(username: $username) {
-            submitStats {
-              acSubmissionNum { difficulty count }
-              totalSubmissionNum { difficulty count }
+        query userProfileUserQuestionProgressV2($userSlug: String!) {
+          userProfileUserQuestionProgressV2(userSlug: $userSlug) {
+            numAcceptedQuestions {
+              difficulty
+              count
+            }
+            numFailedQuestions {
+              difficulty
+              count
+            }
+            numUntouchedQuestions {
+              difficulty
+              count
             }
           }
         }
         """
-        data = self._post({"query": query, "variables": {"username": self.username}})
-        matched = data.get("matchedUser")
-        if not matched:
+
+        data = self._post({
+            "query": query,
+            "variables": {"userSlug": self.username},
+        })
+
+        progress = data.get("userProfileUserQuestionProgressV2")
+
+        if not progress:
             raise LeetCodeAPIError(
-                f"No such LeetCode user '{self.username}', or profile is private."
+                f"No progress data returned for LeetCode user '{self.username}'."
             )
 
-        ac = {row["difficulty"]: row["count"] for row in matched["submitStats"]["acSubmissionNum"]}
-        total = {row["difficulty"]: row["count"] for row in matched["submitStats"]["totalSubmissionNum"]}
+        accepted = {
+            row["difficulty"]: row["count"]
+            for row in progress.get("numAcceptedQuestions", [])
+        }
+
+        failed = {
+            row["difficulty"]: row["count"]
+            for row in progress.get("numFailedQuestions", [])
+        }
+
+        total_solved = accepted.get("All", 0)
 
         return ProgressStats(
-            total_solved=ac.get("All", 0),
-            easy_solved=ac.get("Easy", 0),
-            medium_solved=ac.get("Medium", 0),
-            hard_solved=ac.get("Hard", 0),
-            total_submissions=total.get("All", 0),
-            accepted_submissions=ac.get("All", 0),
+            total_solved=total_solved,
+            easy_solved=accepted.get("Easy", 0),
+            medium_solved=accepted.get("Medium", 0),
+            hard_solved=accepted.get("Hard", 0),
+            total_submissions=total_solved + failed.get("All", 0),
+            accepted_submissions=total_solved,
         )
