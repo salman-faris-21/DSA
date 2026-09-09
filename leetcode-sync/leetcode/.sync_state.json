@@ -1,0 +1,85 @@
+{
+  "synced": {
+    "find-the-index-of-the-first-occurrence-in-a-string::cpp": {
+      "submission_id": "2086439695",
+      "timestamp": 1785343988
+    },
+    "flood-fill::cpp": {
+      "submission_id": "2135819146",
+      "timestamp": 1788926778
+    },
+    "insert-delete-getrandom-o1::cpp": {
+      "submission_id": "2086090892",
+      "timestamp": 1785327660
+    },
+    "insert-interval::cpp": {
+      "submission_id": "2076804333",
+      "timestamp": 1784706243
+    },
+    "is-subsequence::cpp": {
+      "submission_id": "2076728141",
+      "timestamp": 1784702083
+    },
+    "length-of-last-word::cpp": {
+      "submission_id": "2077262729",
+      "timestamp": 1784732330
+    },
+    "longest-common-prefix::cpp": {
+      "submission_id": "2078485965",
+      "timestamp": 1784816091
+    },
+    "merge-intervals::cpp": {
+      "submission_id": "2076949914",
+      "timestamp": 1784714308
+    },
+    "min-stack::cpp": {
+      "submission_id": "2087971673",
+      "timestamp": 1785437654
+    },
+    "next-greater-element-i::cpp": {
+      "submission_id": "2088711423",
+      "timestamp": 1785495679
+    },
+    "next-greater-element-ii::cpp": {
+      "submission_id": "2088747547",
+      "timestamp": 1785498200
+    },
+    "number-of-provinces::cpp": {
+      "submission_id": "2135428698",
+      "timestamp": 1788887864
+    },
+    "product-of-array-except-self::cpp": {
+      "submission_id": "2086331347",
+      "timestamp": 1785339534
+    },
+    "reverse-words-in-a-string::cpp": {
+      "submission_id": "2078488911",
+      "timestamp": 1784816236
+    },
+    "roman-to-integer::cpp": {
+      "submission_id": "2078682482",
+      "timestamp": 1784825585
+    },
+    "rotting-oranges::cpp": {
+      "submission_id": "2135556965",
+      "timestamp": 1788893944
+    },
+    "simplify-path::cpp": {
+      "submission_id": "2087906620",
+      "timestamp": 1785434448
+    },
+    "trapping-rain-water::cpp": {
+      "submission_id": "2088881094",
+      "timestamp": 1785506761
+    },
+    "valid-palindrome::cpp": {
+      "submission_id": "2076713726",
+      "timestamp": 1784701420
+    },
+    "valid-parentheses::cpp": {
+      "submission_id": "2087842326",
+      "timestamp": 1785431812
+    }
+  },
+  "version": 1
+}
