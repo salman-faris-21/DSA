@@ -4,7 +4,7 @@
 
 leetcode:
   # Your public LeetCode username (used for stats + submission lookups)
-  username: "salman-faris-21"
+  username: "qVlKgqoKt9"
 
   # Max number of recent accepted submissions to inspect per run.
   # Keep this reasonably small; the workflow runs on a schedule, so it
@@ -22,10 +22,10 @@ leetcode:
   store_all_languages: false
 
 github:
-  repository: "salman-faris-21/DSA"   # owner/repo
+  repository: "salman-faris-21/DSA" # owner/repo
   branch: "main"
-  solution_dir: "leetcode"                # root folder for solutions
-  readme_path: "README.md"                # README containing the dashboard markers
+  solution_dir: "leetcode" # root folder for solutions
+  readme_path: "README.md" # README containing the dashboard markers
   commit_author_name: "leetcode-sync-bot"
   commit_author_email: "actions@users.noreply.github.com"
 
