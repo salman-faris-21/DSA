@@ -1,0 +1,87 @@
+name: LeetCode Sync
+
+on:
+  schedule:
+    # Every 6 hours. Keep in sync with config.yml -> sync.schedule_cron.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}   # allows manual "Run workflow" from the Actions tab
+
+permissions:
+  contents: write   # needed to commit/push solution files + README updates
+
+concurrency:
+  group: leetcode-sync
+  cancel-in-progress: false   # never cancel a run mid-commit
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run LeetCode sync
+        id: run_sync
+        env:
+          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
+          LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+        working-directory: .
+        run: |
+          set -o pipefail
+          python scripts/sync.py | tee sync_output.log
+          # Surface whether anything changed, for the next step.
+          if grep -q "^changed=true$" sync_output.log; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check for local changes
+        id: git_status
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "dirty=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "dirty=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.git_status.outputs.dirty == 'true'
+        run: |
+          git config user.name "leetcode-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add leetcode/ README.md
+
+          # Count how many new problem folders were added in this commit,
+          # so single-problem vs multi-problem commit messages read cleanly.
+          NEW_DIRS=$(git diff --cached --name-only --diff-filter=A | grep -c '/README.md$' || true)
+
+          if [ "$NEW_DIRS" -eq 1 ]; then
+            PROBLEM_DIR=$(git diff --cached --name-only --diff-filter=A | grep '/README.md$' | head -n1 | xargs dirname | xargs basename)
+            git commit -m "leetcode: add ${PROBLEM_DIR}"
+          elif [ "$NEW_DIRS" -gt 1 ]; then
+            git commit -m "leetcode: sync new solutions"
+          else
+            git commit -m "leetcode: update stats"
+          fi
+
+          git push
+
+      - name: Upload sync log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: leetcode-sync-log
+          path: sync_output.log
+          retention-days: 14

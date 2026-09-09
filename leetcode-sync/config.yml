@@ -1,0 +1,40 @@
+# leetcode-sync configuration
+# Nothing in this file is secret. Credentials/tokens live in GitHub Secrets
+# (see docs/SETUP.md) and are read from environment variables at runtime.
+
+leetcode:
+  # Your public LeetCode username (used for stats + submission lookups)
+  username: "salman-faris-21"
+
+  # Max number of recent accepted submissions to inspect per run.
+  # Keep this reasonably small; the workflow runs on a schedule, so it
+  # only needs to look back far enough to cover the gap since the last run.
+  submission_fetch_limit: 20
+
+  # If a problem was solved in multiple languages, prefer these languages
+  # in this order when only one solution should be stored per problem.
+  # Set `store_all_languages: true` to keep one folder per language instead.
+  preferred_languages:
+    - cpp
+    - python3
+    - java
+    - javascript
+  store_all_languages: false
+
+github:
+  repository: "salman-faris-21/DSA"   # owner/repo
+  branch: "main"
+  solution_dir: "leetcode"                # root folder for solutions
+  readme_path: "README.md"                # README containing the dashboard markers
+  commit_author_name: "leetcode-sync-bot"
+  commit_author_email: "actions@users.noreply.github.com"
+
+sync:
+  # Cron expression used in the GitHub Actions workflow (UTC).
+  # Default: every 6 hours.
+  schedule_cron: "0 */6 * * *"
+
+state:
+  # Tracks which problems/languages have already been synced, so re-runs
+  # are idempotent. This file is committed to the repo alongside solutions.
+  file: "leetcode/.sync_state.json"
