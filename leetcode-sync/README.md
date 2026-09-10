@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 66
+**Solved:** 68
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 25 | 36 | 5 |
+| 25 | 38 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,8 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | cpp |
+| 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium | cpp |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium | cpp |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | cpp |
 | 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy | cpp |
@@ -33,8 +35,6 @@ put together.
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | cpp |
 | 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | Medium | cpp |
 | 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | Easy | cpp |
-| 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | cpp |
-| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
