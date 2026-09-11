@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 68
+**Solved:** 69
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 25 | 38 | 5 |
+| 25 | 39 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,7 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | cpp |
 | 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium | cpp |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium | cpp |
@@ -34,7 +35,6 @@ put together.
 | 547 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | Medium | cpp |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | cpp |
 | 503 | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | Medium | cpp |
-| 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | Easy | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
