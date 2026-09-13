@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 70
+**Solved:** 71
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 25 | 40 | 5 |
+| 25 | 41 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,7 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | Medium | cpp |
 | 1091 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium | cpp |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | cpp |
@@ -34,7 +35,6 @@ put together.
 | 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy | cpp |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | Medium | cpp |
 | 547 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | Medium | cpp |
-| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
