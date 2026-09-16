@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 72
+**Solved:** 73
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 25 | 42 | 5 |
+| 25 | 43 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,8 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium | cpp |
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
 | 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium | cpp |
 | 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | Medium | cpp |
 | 1091 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium | cpp |
@@ -33,8 +35,6 @@ put together.
 | 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium | cpp |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium | cpp |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | cpp |
-| 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy | cpp |
-| 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
