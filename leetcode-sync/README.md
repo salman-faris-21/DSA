@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 73
+**Solved:** 74
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 25 | 43 | 5 |
+| 26 | 43 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,7 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | cpp |
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium | cpp |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
 | 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium | cpp |
@@ -34,7 +35,6 @@ put together.
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | cpp |
 | 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium | cpp |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium | cpp |
-| 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
