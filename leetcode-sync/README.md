@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 74
+**Solved:** 77
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 26 | 43 | 5 |
+| 26 | 46 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,9 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | Medium | cpp |
+| 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | cpp |
+| 6 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | cpp |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | cpp |
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium | cpp |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
@@ -32,9 +35,6 @@ put together.
 | 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | Medium | cpp |
 | 1091 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium | cpp |
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
-| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | cpp |
-| 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium | cpp |
-| 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
