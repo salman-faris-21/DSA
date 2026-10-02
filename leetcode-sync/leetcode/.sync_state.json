@@ -4,6 +4,14 @@
       "submission_id": "2137251541",
       "timestamp": 1789028210
     },
+    "3sum::cpp": {
+      "submission_id": "2159820379",
+      "timestamp": 1790919692
+    },
+    "container-with-most-water::cpp": {
+      "submission_id": "2159792948",
+      "timestamp": 1790917592
+    },
     "course-schedule-ii::cpp": {
       "submission_id": "2143911072",
       "timestamp": 1789578279
@@ -24,6 +32,10 @@
       "submission_id": "2135819146",
       "timestamp": 1788926778
     },
+    "group-anagrams::cpp": {
+      "submission_id": "2160096007",
+      "timestamp": 1790941456
+    },
     "insert-delete-getrandom-o1::cpp": {
       "submission_id": "2086090892",
       "timestamp": 1785327660
@@ -39,6 +51,10 @@
     "is-subsequence::cpp": {
       "submission_id": "2076728141",
       "timestamp": 1784702083
+    },
+    "isomorphic-strings::cpp": {
+      "submission_id": "2159831647",
+      "timestamp": 1790920529
     },
     "length-of-last-word::cpp": {
       "submission_id": "2077262729",
@@ -84,6 +100,10 @@
       "submission_id": "2086331347",
       "timestamp": 1785339534
     },
+    "ransom-note::cpp": {
+      "submission_id": "2159826407",
+      "timestamp": 1790920139
+    },
     "reverse-words-in-a-string::cpp": {
       "submission_id": "2078488911",
       "timestamp": 1784816236
@@ -120,6 +140,10 @@
       "submission_id": "2150115920",
       "timestamp": 1790101472
     },
+    "valid-anagram::cpp": {
+      "submission_id": "2160051553",
+      "timestamp": 1790937927
+    },
     "valid-palindrome::cpp": {
       "submission_id": "2076713726",
       "timestamp": 1784701420
@@ -127,6 +151,10 @@
     "valid-parentheses::cpp": {
       "submission_id": "2087842326",
       "timestamp": 1785431812
+    },
+    "word-pattern::cpp": {
+      "submission_id": "2159858853",
+      "timestamp": 1790922453
     },
     "zigzag-conversion::cpp": {
       "submission_id": "2159489762",

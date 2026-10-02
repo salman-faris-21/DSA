@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 77
+**Solved:** 84
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 26 | 46 | 5 |
+| 30 | 49 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,16 +25,16 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | cpp |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | cpp |
+| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | cpp |
+| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy | cpp |
+| 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | Easy | cpp |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium | cpp |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | cpp |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | Medium | cpp |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | cpp |
 | 6 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | cpp |
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | cpp |
-| 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium | cpp |
-| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
-| 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium | cpp |
-| 1631 | [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/) | Medium | cpp |
-| 1091 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium | cpp |
-| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
