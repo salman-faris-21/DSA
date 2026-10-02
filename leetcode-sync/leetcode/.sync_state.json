@@ -12,6 +12,10 @@
       "submission_id": "2159792948",
       "timestamp": 1790917592
     },
+    "contains-duplicate-ii::cpp": {
+      "submission_id": "2160109478",
+      "timestamp": 1790942590
+    },
     "course-schedule-ii::cpp": {
       "submission_id": "2143911072",
       "timestamp": 1789578279
@@ -35,6 +39,10 @@
     "group-anagrams::cpp": {
       "submission_id": "2160096007",
       "timestamp": 1790941456
+    },
+    "happy-number::cpp": {
+      "submission_id": "2160183971",
+      "timestamp": 1790948285
     },
     "insert-delete-getrandom-o1::cpp": {
       "submission_id": "2086090892",
