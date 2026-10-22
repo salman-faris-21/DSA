@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 87
+**Solved:** 88
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 33 | 49 | 5 |
+| 33 | 50 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,7 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | java |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | java |
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Easy | cpp |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | cpp |
@@ -34,7 +35,6 @@ put together.
 | 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | cpp |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy | cpp |
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | Easy | cpp |
-| 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
