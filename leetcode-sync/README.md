@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 92
+**Solved:** 94
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 37 | 50 | 5 |
+| 37 | 52 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,8 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium | java |
+| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | java |
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | Easy | java |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | java |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | java |
@@ -33,8 +35,6 @@ put together.
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | java |
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Easy | cpp |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | cpp |
-| 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | Easy | cpp |
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
