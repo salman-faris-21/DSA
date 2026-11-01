@@ -64,6 +64,10 @@
       "submission_id": "2159524404",
       "timestamp": 1790879231
     },
+    "invert-binary-tree::java": {
+      "submission_id": "2186862854",
+      "timestamp": 1793524745
+    },
     "is-subsequence::cpp": {
       "submission_id": "2076728141",
       "timestamp": 1784702083
@@ -79,6 +83,10 @@
     "longest-common-prefix::cpp": {
       "submission_id": "2078485965",
       "timestamp": 1784816091
+    },
+    "maximum-depth-of-binary-tree::java": {
+      "submission_id": "2186833230",
+      "timestamp": 1793521150
     },
     "merge-intervals::cpp": {
       "submission_id": "2076949914",
@@ -132,6 +140,10 @@
       "submission_id": "2135556965",
       "timestamp": 1788893944
     },
+    "same-tree::java": {
+      "submission_id": "2186836881",
+      "timestamp": 1793521583
+    },
     "shortest-path-in-binary-matrix::cpp": {
       "submission_id": "2140364218",
       "timestamp": 1789283579
@@ -147,6 +159,10 @@
     "surrounded-regions::cpp": {
       "submission_id": "2137361141",
       "timestamp": 1789035361
+    },
+    "symmetric-tree::java": {
+      "submission_id": "2186868281",
+      "timestamp": 1793525392
     },
     "trapping-rain-water::cpp": {
       "submission_id": "2088881094",

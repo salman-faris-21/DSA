@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 88
+**Solved:** 92
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 33 | 50 | 5 |
+| 37 | 50 | 5 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,16 +25,16 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | Easy | java |
+| 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | java |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | java |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | java |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | java |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | java |
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Easy | cpp |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | Easy | cpp |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | Easy | cpp |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | cpp |
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | cpp |
-| 290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | cpp |
-| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy | cpp |
-| 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | Easy | cpp |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
