@@ -44,6 +44,10 @@
       "submission_id": "2086439695",
       "timestamp": 1785343988
     },
+    "flatten-binary-tree-to-linked-list::java": {
+      "submission_id": "2188903627",
+      "timestamp": 1793734928
+    },
     "flood-fill::cpp": {
       "submission_id": "2135819146",
       "timestamp": 1788926778
@@ -124,9 +128,17 @@
       "submission_id": "2135428698",
       "timestamp": 1788887864
     },
+    "path-sum::java": {
+      "submission_id": "2188907707",
+      "timestamp": 1793735454
+    },
     "path-with-minimum-effort::cpp": {
       "submission_id": "2140605825",
       "timestamp": 1789303561
+    },
+    "populating-next-right-pointers-in-each-node-ii::java": {
+      "submission_id": "2188888892",
+      "timestamp": 1793733201
     },
     "product-of-array-except-self::cpp": {
       "submission_id": "2086331347",
