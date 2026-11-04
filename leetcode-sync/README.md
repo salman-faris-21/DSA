@@ -13,11 +13,11 @@ put together.
 <!-- LEETCODE_STATS_START -->
 ## LeetCode Progress
 
-**Solved:** 97
+**Solved:** 99
 
 | Easy | Medium | Hard |
 |------|--------|------|
-| 38 | 54 | 5 |
+| 38 | 55 | 6 |
 
 **Acceptance Rate:** 100.0%
 
@@ -25,6 +25,8 @@ put together.
 
 | # | Problem | Difficulty | Language |
 |---|---------|------------|----------|
+| 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | java |
+| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | Medium | java |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum/) | Easy | java |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | java |
 | 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | Medium | java |
@@ -33,8 +35,6 @@ put together.
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | Easy | java |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | java |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | java |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | java |
-| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | java |
 
 _Last updated automatically by [leetcode-sync](.github/workflows/leetcode-sync.yml)._
 <!-- LEETCODE_STATS_END -->
